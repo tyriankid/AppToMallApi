@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppToMallApi", "AppToMallApi\AppToMallApi.csproj", "{2AE0C130-6928-469F-8954-4B212071BAB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallSdk", "MallSdk\MallSdk.csproj", "{BFE3928F-48F4-48CF-BD6C-43BECA9294B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AE0C130-6928-469F-8954-4B212071BAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE0C130-6928-469F-8954-4B212071BAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE0C130-6928-469F-8954-4B212071BAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE0C130-6928-469F-8954-4B212071BAB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE3928F-48F4-48CF-BD6C-43BECA9294B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE3928F-48F4-48CF-BD6C-43BECA9294B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE3928F-48F4-48CF-BD6C-43BECA9294B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE3928F-48F4-48CF-BD6C-43BECA9294B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6F84513-CB74-4FA9-A1BA-DA82151C7018}
+	EndGlobalSection
+EndGlobal

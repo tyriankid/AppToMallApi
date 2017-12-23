@@ -9,9 +9,9 @@ using System.Data;
 namespace FangApi.park
 {
     /// <summary>
-    /// InsertMemberInfo 的摘要说明
+    /// InsertMemberInfoTemp 的摘要说明
     /// </summary>
-    public class InsertMemberInfo : IHttpHandler
+    public class InsertMemberInfoTemp : IHttpHandler
     {
 
         public void ProcessRequest(HttpContext context)
@@ -34,7 +34,7 @@ namespace FangApi.park
              new SqlParameter("@Birthday",context.Request.QueryString["Birthday"].ToString()),
              new SqlParameter("@Phone",context.Request.QueryString["Phone"].ToString()),
              new SqlParameter("@CreateTime",DateTime.Now),
-             new SqlParameter("@UpdateUser","微信用户更改"),
+             new SqlParameter("@UpdateUser","微信活动卡绑定"),
              new SqlParameter("@UpdateUserId","999999"),
              new SqlParameter("@UpdateTime",DateTime.Now),
               new SqlParameter("@ChildName",context.Request.QueryString["ChildName"].ToString()),
@@ -62,7 +62,7 @@ namespace FangApi.park
              new SqlParameter("@OtherInfo",""),
              new SqlParameter("@Mark",""),
              new SqlParameter("@CreateTime",DateTime.Now),
-             new SqlParameter("@UpdateUser","微信直购"),
+             new SqlParameter("@UpdateUser","微信活动卡绑定"),
              new SqlParameter("@UpdateUserId","999999"),
              new SqlParameter("@UpdateTime",DateTime.Now),
              new SqlParameter("@MemberType",context.Request.QueryString["CardType"].ToString()),
@@ -84,13 +84,13 @@ namespace FangApi.park
                   new SqlParameter("@MemberId",memberid),
                   new SqlParameter("@id",context.Request.QueryString["CardId"].ToString())
                        };
-                        i = SqlHelper.ExecuteUpdate(SqlHelper.connstrpark, CommandType.Text, "update Card set MemberId=@MemberId where id=@id", spcard);
+                        i = SqlHelper.ExecuteUpdate(SqlHelper.connstrpark, CommandType.Text, "update TempCard set MemberId=@MemberId where id=@id", spcard);
                     }
                 }
             }
             context.Response.ContentType = "text/plain";
             context.Response.Write(memberid.ToString());
-
+    
         }
 
         public bool IsReusable

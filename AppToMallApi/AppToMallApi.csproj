@@ -177,6 +177,9 @@
     <Content Include="park\GoInPark.ashx" />
     <Content Include="park\InsertMemberInfo.ashx" />
     <Content Include="park\InShop.ashx" />
+    <Content Include="park\GetTempCardInfo.ashx" />
+    <Content Include="park\GetYuYueById.ashx" />
+    <Content Include="park\InsertMemberInfoTemp.ashx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -243,6 +246,15 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="park\GetTempCardInfo.ashx.cs">
+      <DependentUpon>GetTempCardInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="park\GetYuYueById.ashx.cs">
+      <DependentUpon>GetYuYueById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="park\InsertMemberInfoTemp.ashx.cs">
+      <DependentUpon>InsertMemberInfoTemp.ashx</DependentUpon>
     </Compile>
     <Compile Include="park\ParkHandler.ashx.cs">
       <DependentUpon>ParkHandler.ashx</DependentUpon>

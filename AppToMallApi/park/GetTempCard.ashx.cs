@@ -30,6 +30,8 @@ namespace FangApi.park
                         entity.CardNumber = dt.Rows[0]["CardNumber"].ToString();
                         entity.CardState = Int32.Parse(dt.Rows[0]["CardState"].ToString());
                         entity.CardUseTime = dt.Rows[0]["CardUseTime"].ToString();
+                        entity.MemberId = Int32.Parse(dt.Rows[0]["MemberId"].ToString());
+                        entity.id = Int32.Parse(dt.Rows[0]["id"].ToString());
                         str = JsonConvert.SerializeObject(entity);
                     }
                 
@@ -40,7 +42,9 @@ namespace FangApi.park
         }
         public class TempCard
         {
+            public int id;
             public string CardNumber;
+            public int MemberId;
             public int CardState;
             public string CardUseTime;
         }
